@@ -78,14 +78,13 @@ export const loginStyles = StyleSheet.create({
     },
     text3: {
         fontSize: 18,
-        textAlign: 'center',
         fontWeight: '500',
-        marginBottom: 60,
         color: 'black',
         
 
     },
     innerText: {
         color: '#ad40af',
+        fontWeight: '700',
     }
 })

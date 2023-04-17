@@ -54,26 +54,32 @@ export default function Login () {
                 <Text style={loginStyles.text2} >Or login with ...</Text>
 
                 <View style={{flexDirection: 'row', justifyContent: 'space-around', marginBottom: 20}}>
-                    <TouchableOpacity style={{borderWidth: 1, borderRadius: 5, paddingVertical: 10, paddingHorizontal: 20}}>
+                    <TouchableOpacity style={{borderWidth: 2, borderRadius: 10, borderColor: '#ddd', paddingVertical: 10, paddingHorizontal: 30}}>
                         <Image 
                         style={loginStyles.cLogo}
                         source={facebook}
                         />
                     </TouchableOpacity>
-                    <TouchableOpacity style={{borderWidth: 1, borderRadius: 5, paddingVertical: 10, paddingHorizontal: 20}}>
+                    <TouchableOpacity style={{borderWidth: 2, borderRadius: 10, borderColor: '#ddd', paddingVertical: 10, paddingHorizontal: 30}}>
                         <Image 
                         style={loginStyles.cLogo}
                         source={google}
                         />
                     </TouchableOpacity>
-                    <TouchableOpacity style={{borderWidth: 1, borderRadius: 5, paddingVertical: 10, paddingHorizontal: 20}}>
+                    <TouchableOpacity style={{borderWidth: 2, borderRadius: 10, borderColor: '#ddd', paddingVertical: 10, paddingHorizontal: 30}}>
                         <Image
                         style={loginStyles.cLogo} 
                         source={apple}
                         />
                     </TouchableOpacity>
                 </View>
-                <Text style={loginStyles.text3}>New to App? <Text style={loginStyles.innerText}>Rgister</Text></Text>
+                <View style={{flexDirection: 'row', marginBottom: 60, justifyContent: 'center', paddingVertical: 0 }}>
+                <Text style={loginStyles.text3}>New to App?</Text>
+                <TouchableOpacity>
+                <Text style={loginStyles.innerText}>Rgister</Text>
+                </TouchableOpacity>
+                </View>
+                
                 
             </View>
             </SafeAreaView>
