@@ -1,5 +1,5 @@
-import React from "react";
-import {View, Text, Image, SafeAreaView, TextInput, TouchableOpacity, Alert, ScrollView} from "react-native";
+import React, {useState} from "react";
+import {View, Text, Image, SafeAreaView, TextInput, TouchableOpacity, ScrollView} from "react-native";
 import registerLogo from "../../../assets/register.png";
 import facebook from "../../../assets/Facebook.png";
 import google from "../../../assets/Google.png";
@@ -7,13 +7,21 @@ import apple from "../../../assets/Apple.png";
 import { registerStyles } from "./registerStyles";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import Feather from "react-native-vector-icons/Feather";
+import Ionicons from "react-native-vector-icons/Ionicons";
+import Fontisto from "react-native-vector-icons/Fontisto";
+import DatePicker from "react-native-date-picker";
 
 
 export default function Register ({navigation}) {
 
+
     const onLoginPressed = () => {
         navigation.navigate('Login Screen')
     }
+
+    const [date, setDate] = useState(new Date())
+    const [open, setOpen] = useState(false)
+    
 
     return(
         <ScrollView>
@@ -48,9 +56,9 @@ export default function Register ({navigation}) {
                 </View>
                 
                 <View style={registerStyles.icon_textinput}>
-                    <MaterialIcons 
+                    <Ionicons 
                     style={registerStyles.icon}
-                    name="alternate-email" size={25} color="#666"/>
+                    name="person-outline" size={25} color="#666"/>
                     <TextInput
                     style={registerStyles.input}
                     placeholder="Enter full name"
@@ -58,9 +66,9 @@ export default function Register ({navigation}) {
                     />
                 </View>
                 <View style={registerStyles.icon_textinput}>
-                    <Feather 
+                    <MaterialIcons 
                     style={registerStyles.icon}
-                    name="lock" size={25} color="#666"/>
+                    name="alternate-email" size={25} color="#666"/>
                     <TextInput
                     style={registerStyles.input}
                     placeholder="Email ID"
@@ -69,9 +77,9 @@ export default function Register ({navigation}) {
                 </View>
 
                 <View style={registerStyles.icon_textinput}>
-                    <MaterialIcons 
+                <Feather 
                     style={registerStyles.icon}
-                    name="alternate-email" size={25} color="#666"/>
+                    name="lock" size={25} color="#666"/>
                     <TextInput
                     style={registerStyles.input}
                     placeholder="Enter Password"
@@ -88,13 +96,35 @@ export default function Register ({navigation}) {
                     secureTextEntry={true}
                     />
                 </View>
+                
+                <View style={registerStyles.icon_textinput}>
+                    <Fontisto 
+                    style={registerStyles.icon}
+                    name="date" size={25} color="#666"/>
+                    <TouchableOpacity
+                    onPress={() => setOpen(true)}
+                    >
+                        <Text style={{fontSize: 18, color: 'gray', marginLeft: 5, marginBottom:5}}>Date of birth</Text>
+                    </TouchableOpacity>
+                </View>
 
+                <DatePicker
+                    modal
+                    open={open}
+                    date={date}
+                    mode="date"
+                    onConfirm={(date) => {
+                        setOpen(false)
+                        setDate(date)
+                    }}
+                    onCancel={() => {
+                        setOpen(false)
+                    }}
+                    />
 
                 <TouchableOpacity style={registerStyles.buttonTouch}>
                     <Text style={registerStyles.buttonText}>Login</Text>
                 </TouchableOpacity>
-
-                
                 <View style={{ flexDirection: 'row', marginBottom: 30, justifyContent: 'center', paddingVertical: 0 }}>
                 <Text style={registerStyles.text3}>Already registered?</Text>
                 <TouchableOpacity
