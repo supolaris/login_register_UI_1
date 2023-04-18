@@ -12,7 +12,11 @@ This repository contain code of Home, Login and register screen User Interface w
 React Navigation:
 ```bash
 npm install @react-navigation/native
+```
+```bash
 npm install react-native-screens react-native-safe-area-context
+```
+```bash
 npm install @react-navigation/native-stack
 ```
 
