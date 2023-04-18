@@ -73,7 +73,7 @@ export default function Login () {
                         />
                     </TouchableOpacity>
                 </View>
-                <View style={{flexDirection: 'row', marginBottom: 60, justifyContent: 'center', paddingVertical: 0 }}>
+                <View style={{ flexDirection: 'row', marginBottom: 60, justifyContent: 'center', paddingVertical: 0 }}>
                 <Text style={loginStyles.text3}>New to App?</Text>
                 <TouchableOpacity>
                 <Text style={loginStyles.innerText}>Rgister</Text>

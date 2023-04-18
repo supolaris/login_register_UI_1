@@ -20,7 +20,7 @@ export const loginStyles = StyleSheet.create({
     text: {
         fontSize: 28,
         fontWeight: '600',
-        color: 'black',
+        color: '#1f1f2e',
         marginBottom: 20,
     },
     icon_textinput: {
@@ -79,12 +79,14 @@ export const loginStyles = StyleSheet.create({
     text3: {
         fontSize: 18,
         fontWeight: '500',
-        color: 'black',
+        color: '#1f1f2e',
         
 
     },
     innerText: {
         color: '#ad40af',
         fontWeight: '700',
+        fontSize: 18,
+        paddingLeft: 5,
     }
 })
