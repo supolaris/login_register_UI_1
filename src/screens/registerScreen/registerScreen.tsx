@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 import {View, Text, Image, SafeAreaView, TextInput, TouchableOpacity, ScrollView} from "react-native";
+import { registerStyles } from "./registerStyles";
 import registerLogo from "../../../assets/register.png";
 import facebook from "../../../assets/Facebook.png";
 import google from "../../../assets/Google.png";
 import apple from "../../../assets/Apple.png";
-import { registerStyles } from "./registerStyles";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import Feather from "react-native-vector-icons/Feather";
 import Ionicons from "react-native-vector-icons/Ionicons";
