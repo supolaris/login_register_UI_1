@@ -38,13 +38,13 @@ npm install react-native-date-picker
 
 ## Screenshots
 
-Home Screen:
+
 ![App Screenshot](https://github.com/supolaris/login_register_UI_1/blob/main/assets/homeSS.png?raw=true)
 
-Login Screen:
+
 ![App Screenshot](https://github.com/supolaris/login_register_UI_1/blob/main/assets/loginSS.png?raw=true)
 
 
-Register Screen:
+
 ![App Screenshot](https://github.com/supolaris/login_register_UI_1/blob/main/assets/registerSS.png?raw=true)
 
