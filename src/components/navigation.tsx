@@ -13,23 +13,18 @@ export default function Navigation () {
 
     return(
         <NavigationContainer>
-            <Stack.Navigator >
+            <Stack.Navigator screenOptions={{headerShown: false}}>
                 <Stack.Screen
                 name="Start Screen"
                 component={Start}
-                options={{headerShown: false}}
                 />
-
                 <Stack.Screen
                 name="Login Screen"
                 component={Login}
-                options={{headerShown: false}}
                 />
-
                 <Stack.Screen
                 name="Register Screen"
                 component={Register}
-                options={{headerShown: false}}
                 />
             </Stack.Navigator>
         </NavigationContainer>
