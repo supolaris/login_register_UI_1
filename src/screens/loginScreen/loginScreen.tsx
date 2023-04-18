@@ -9,7 +9,11 @@ import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import Feather from "react-native-vector-icons/Feather";
 
 
-export default function Login () {
+export default function Login ({ navigation }) {
+
+    const onRegisterPressed = () => {
+        navigation.navigate('Register Screen');
+    }
 
     return(
         <SafeAreaView style={loginStyles.container}>
@@ -75,7 +79,9 @@ export default function Login () {
                 </View>
                 <View style={{ flexDirection: 'row', marginBottom: 60, justifyContent: 'center', paddingVertical: 0 }}>
                 <Text style={loginStyles.text3}>New to App?</Text>
-                <TouchableOpacity>
+                <TouchableOpacity 
+                onPress={onRegisterPressed}
+                >
                 <Text style={loginStyles.innerText}>Rgister</Text>
                 </TouchableOpacity>
                 </View>
