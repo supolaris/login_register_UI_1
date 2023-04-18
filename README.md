@@ -6,9 +6,11 @@ This repository contain code of Home, Login and register screen User Interface w
 
 
 
-## Installing Required Libraries in for this repository
+## Installing Required Libraries in this repository
 
-
+```bash
+yarn install
+```
 React Navigation:
 ```bash
 npm install @react-navigation/native
