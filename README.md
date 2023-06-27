@@ -6,7 +6,7 @@ This repository contain code of Home, Login and register screen User Interface w
 
 
 
-## Installing Required Libraries in this repository
+## Installing Required Libraries for this repository
 
 ```bash
 npm install
